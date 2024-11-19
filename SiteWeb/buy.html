@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشراء</title>
+    <style>
+        /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #006633;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #006633;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Products section styles */
+.products {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    direction: rtl; /* Ensure right-to-left layout */
+}
+
+.product-item {
+    width: 45%;
+    margin: 10px 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text in product item */
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #006633;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.product-item button:hover {
+    background-color: #005524; /* Darker shade on hover */
+}
+
+/* Articles section styles */
+.articles {
+    padding: 20px;
+    direction: rtl; /* Ensure right-to-left layout */
+}
+
+.articles h2 {
+    text-align: center; /* Center articles section title */
+}
+
+article {
+    margin: 20px 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+article p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Footer styles */
+footer {
+    background-color: #006633;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Back button style */
+.back-button {
+    display: block;
+    background-color: #006633;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.back-button:hover {
+    background-color: #005524; /* Darker shade on hover */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping - Shoes and Clothing</h1>
+    </header>
+
+    <section class="products">
+       
+        <div class="product-item">
+            <img src="gallery/buy1.jpg" alt="Sports Shoes">
+            <h3>Sports Shoes</h3>
+            <p>Description of the sports shoes.</p>
+            <a href="payment.html"><button>Buy Now</button></a>
+        </div>
+        <div class="product-item">
+            <img src="gallery/buy2.jpg" alt="Comfortable Clothing">
+            <h3>Comfortable Clothing</h3>
+            <p>Description of the clothing.</p>
+            <a href="payment.html"><button>Buy Now</button></a>
+        </div>
+        <!-- Add more products as needed -->
+
+        <!-- Back button -->
+        
+    </section>
+
+    <section class="articles">
+        <h2>Related Articles</h2>
+        <article>
+            <h3>The Importance of Choosing the Right Shoes</h3>
+            <p>Wearing the right walking shoes can help prevent foot problems.</p>
+            <p>(Such as blisters and corns); walking shoes should be relatively lightweight and provide good shock absorption</p>
+            <p>(when the foot strikes the ground). There are many types of walking shoes available to suit all needs.</p>
+            <a href="https://www.moh.gov.sa/HealthAwareness/EducationalContent/PublicHealth/Pages/003.aspx">Read More</a>
+        </article>
+        <article>
+            <h3>How to Choose the Perfect Clothing</h3>
+            <p>Article content about choosing clothing.</p>
+            <a href="https://mawdoo3.com/%D9%81%D9%86_%D8%A7%D8%AE%D8%AA%D9%8A%D8%A7%D8%B1_%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%A8%D8%B3">Read More</a>
+        </article>
+        <!-- Add more articles as needed -->
+    </section>
+    <a href="index.html" class="back-button">Back to Home Page</a>
+    <footer>
+        <p>&copy; 2024 Saudi Sports Investment</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background-color: #006633;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-form, .contact-info {
+            padding: 20px;
+            direction: rtl;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-form h2, .contact-info h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #006633;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        footer {
+            background-color: #006633;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        button {
+            font-size: larger;  
+        }
+
+        .back-button {
+            background-color: #555;
+            margin-top: 20px;
+            font-size: larger;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .contact-info h2 {
+            color: #006633; 
+            font-size: 18px;
+        }
+
+        .contact-form h2 {
+            color: #006633;
+        }
+
+        /* Footer Flexbox for Contact Info */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .footer-content p {
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        .footer-content p:first-child {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        .footer-content p:nth-child(2) {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .footer-content p:last-child {
+            text-align: left;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Page</h1>
+    </header>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Back Button -->
+        <button class="back-button" onclick="window.location.href='index.html'">Back to Home Page</button>
+    </section>
+
+    <!-- Contact Info Section -->
+    <footer>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="footer-content">
+                <p>Phone: 123-456-7890</p>
+                <p>Email: email@example.com</p>
+                <p>Address: XYZ Street, City, Saudi Arabia</p>
+            </div>
+            <p>&copy; 2024 Contact Page</p>
+        </section>
+    </footer>
+</body>
+
+</html>

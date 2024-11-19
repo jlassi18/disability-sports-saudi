@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #006633;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #006633;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #ffffff;
+    direction: rtl; /* Ensure right-to-left layout */
+}
+
+.hero img {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.articles {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    direction: rtl; /* Ensure right-to-left layout */
+}
+
+article {
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.videos {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+
+.gallery .galleryContainer{
+    column-count: 4;
+    column-gap: 20px;
+
+}
+
+.gallery .galleryContainer .item{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .galleryContainer img{
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+
+}
+
+.gallery .galleryContainer .title{
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+
+.gallery .galleryContainer .item:hover img{
+    transform: scale(1.2);
+}
+
+
+footer {
+    background-color: #006633;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.back-button {
+    display: block;
+    background-color: #006633;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 200px;
+    font-size: larger;
+}
+
